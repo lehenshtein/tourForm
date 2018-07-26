@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uikit.almost-flat.css">
+    <link rel="stylesheet" href="css/components/datepicker.almost-flat.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+ <div class="test-block">
+     <form class="uk-form form-wrapper" id="tour-form">
+    <fieldset data-uk-margin>
+        <nav class="uk-navbar">
+
+           <ul class="uk-navbar-nav">
+               <li class="mobile-none"><a href="">Пакетные туры</a></li>
+               <li class="uk-active"><a href="">Экскурсионные туры</a></li>
+               <li class="uk-parent mobile-menu uk-active" data-uk-dropdown="{mode:'click'}" aria-haspopup="true" aria-expanded="false">
+                   <a href=""><i class="fas fa-caret-down"></i></a>
+
+                   <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" style="top: 40px; left: 0px;" tabindex="">
+                       <ul class="uk-nav uk-nav-navbar">
+                          <li><a href="">Пакетные туры</a></li>
+                          <li><a href="">Билеты</a></li>
+                           <li><a href="">Отели</a></li>
+                       </ul>
+                   </div>
+
+               </li>
+               <li class="mobile-none"><a href="">Билеты</a></li>
+               <li class="mobile-none"><a href="">Отели</a></li>
+               
+           </ul>
+
+           <div class="uk-navbar-flip">
+
+               <ul class="uk-navbar-nav">
+                   <li class="uk-active"><a href=""><i class="fas fa-heart"></i> <span class="mobile-none">Избранные туры</span></a></li>
+                   <li><a href=""><i class="fas fa-user"></i> Вход</a></li>
+               </ul>
+
+           </div>
+
+       </nav>
+       
+       
+       
+       <div class="padding-small-sides flex-block flex-wrap">
+        <div class="uk-block dib vat margin-small-sides left-block">
+            <div class="uk-form-row">
+                <p class="uppercase"><label for="country">Куда</label></p>
+                <select id="country" class="width-100">
+                    <option>Страна</option>
+                    <option value="Страна 1">Страна 1</option>
+                    <option value="Страна 2">Страна 2</option>
+                    <option value="Страна 3">Страна 3</option>
+                    <option value="Страна 4">Страна 4</option>
+                </select>
+            </div>
+            <div class="flex-block">
+                 <div class="uk-margin-top dib width-50 padding-small-right">
+                     <p class="uppercase">Дата начала тура</p>
+                    <div class="uk-form-controls uk-form-row uk-margin-small-top flex-block">
+                        <input class="calendar-input" type="text" placeholder="01.01" data-uk-datepicker="{format:'DD.MM.YYYY'}">
+                        <input class="calendar-input" type="text" placeholder="01.02" data-uk-datepicker="{format:'DD.MM.YYYY'}">
+                    </div>
+                </div>
+                <div class="uk-margin-top dib width-50 padding-small-left">
+                    <p class="uppercase"><label for="transp">Проезд</label></p>
+                    <select id="transp" class="width-100">
+                        <option value="Проезд включен">Включен</option>
+                        <option value="Проезд не включен">Не включен</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="uk-block dib vat margin-small-sides right-block">
+          <div class="uk-form-row">
+            <p class="uppercase"><label for="from">Откуда</label></p>
+            <select id="from" class="width-100">
+                <option>Страна</option>
+                <option value="Страна 1">Страна 1</option>
+                <option value="Страна 2">Страна 2</option>
+                <option value="Страна 3">Страна 3</option>
+                <option value="Страна 4">Страна 4</option>
+            </select>
+            
+        </div>
+            <div class="uk-margin-top">
+             <input type="submit" class="margin-middle-top uk-button width-100" value="Найти">
+             </div>
+        
+        </div>
+      </div>
+    </fieldset>
+
+</form>
+ </div>  
+
+
+  
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script src="js/uikit.js"></script>
+    <script src="js/components/datepicker.js"></script>
+    <script src="js/resizer.js"></script>
+
+</body>
+</html>
